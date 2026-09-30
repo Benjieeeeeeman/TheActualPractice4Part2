@@ -18,6 +18,21 @@ public class MusicOrganizer
     {
         files = new ArrayList<>();
     }
+    //question1:
+    public void checkIndex(int index){
+        if (index<0 || index>= files.size()){
+            System.out.println("INVALID");
+        }
+    }
+    //question 2:
+    public boolean validIndex(int index){
+        if (index<0 || index>= files.size()){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
     
     /**
      * Add a file to the collection.
